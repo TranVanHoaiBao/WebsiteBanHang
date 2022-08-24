@@ -1,6 +1,6 @@
 ﻿@using PagedList;
-@using PagedList.Mvc;
-@model PagedList.IPagedList<WebsiteBanHang_tvhb.Context.Product>
+@using PagedList.Mvc
+@model PagedList.IPagedList<WebsiteBanHang_tvhb.ContactDB.Product>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -37,7 +37,7 @@
             }
 </style>
 <section class="padding-bottom">
- 
+
     <div class="row">
         @foreach (var item in Model)
         {

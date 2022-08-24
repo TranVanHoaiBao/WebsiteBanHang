@@ -1,4 +1,4 @@
-﻿using WebsiteBanHang_tvhb.Context;
+﻿using WebsiteBanHang_tvhb.ContactDB;
 using PagedList;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NguyenQuocDai_2118110097.Controllers
+namespace WebsiteBanHang_tvhb.Controllers
 {
     public class AllProductController : Controller
     {

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebsiteBanHang_tvhb.Context;
+using WebsiteBanHang_tvhb.ContactDB;
 using WebsiteBanHang_tvhb.Models;
-
 using System.Security.Cryptography;
 using System.Text;
 
@@ -79,7 +78,7 @@ namespace WebsiteBanHang_tvhb.Controllers
         public static string GetMD5(string str)
         {
             MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] fromData = Encoding.UTF8.GetBytes(str);
+            byte[] fromData = Encoding.Default.GetBytes(str);
             byte[] targetData = md5.ComputeHash(fromData);
             string byte2String = null;
 

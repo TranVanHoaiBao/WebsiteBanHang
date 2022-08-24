@@ -55,7 +55,7 @@
                                     <tr id="product-@item.Product.Id">
                                         <td>
                                             <figure class="itemside">
-                                                <div class="aside"><img src="~/Content/images/items/@item.Product.Img" class="img-sm"></div>
+                                                <div class="aside"><img src="~/Public/@item.Product.Img" class="img-sm"></div>
                                                 <figcaption class="info">
                                                     <a href="#" class="title text-dark">@item.Product.Name</a>
                                                 </figcaption>
@@ -95,8 +95,8 @@ else
                     </table>
 
                     <div class="card-body border-top">
-                        <a href="#" class="btn btn-primary float-md-right">Thanh toán <i class="fa fa-chevron-right"></i> </a>
-                        <a href="#" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
+                        <a href="@Url.Action("Index","Payment")" class="btn btn-primary float-md-right"> Thanh toán <i class="fa fa-chevron-right"></i> </a>
+                        <a href="@Url.Action("Index","Home")" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Tiếp tục mua sắm </a>
                     </div>
                 </div> <!-- card.// -->
 
@@ -137,7 +137,7 @@ else
                         </dl>
                         <hr>
                         <p class="text-center mb-3">
-                            <img src="images/misc/payments.png" height="26">
+                            <img src="~/Public/images/misc/payments.png" height="26">
                         </p>
 
                     </div> <!-- card-body.// -->

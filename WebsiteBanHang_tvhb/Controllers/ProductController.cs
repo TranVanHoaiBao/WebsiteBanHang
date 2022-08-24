@@ -1,11 +1,11 @@
-﻿using WebsiteBanHang_tvhb.Context;
+﻿using WebsiteBanHang_tvhb.ContactDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebsiteBanHang.Controllers
+namespace WebsiteBanHang_tvhb.Controllers
 {
     public class ProductController : Controller
     {
@@ -16,6 +16,6 @@ namespace WebsiteBanHang.Controllers
             var objProduct = objwebsiteBanHangEntities.Products.Where(n => n.Id == Id).FirstOrDefault();
             return View(objProduct);
         }
-       
+
     }
 }
